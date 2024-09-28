@@ -18,16 +18,17 @@
     </title>
   </head>
   <body
-    class="relative w-[375px] h-screen bg-auto bg-no-repeat bg-[url('images/bg-mobile.svg')]"
+    class="flex relative w-[375px] h-screen bg-auto bg-no-repeat bg-[url('images/bg-mobile.svg')]"
   >
     <div
-      class="absolute inset-0 w-full h-full bg-gradient-to-t from-[hsl(257,40%,49%)] to-[hsla(257,40%,49%,80%)]"
+      name="container"
+      class="absolute inset-0 w-full h-full bg-gradient-to-t from-[hsl(257,40%,49%)] to-[hsla(257,40%,49%,80%)] p-8"
     >
-      <div class="logo">
-        <img src="images/logo.svg" alt="Logo" />
-        <div id="big-box">
-          <img src="images/illustration-mockups.svg" alt="" />
-        </div>
+      <img name="logo" class="w-32" src="images/logo.svg" alt="Logo" />
+
+      <img src="images/illustration-mockups.svg" alt="" />
+
+      <div>
         <h1>The Community Your Fans Will Love</h1>
         <p>
           Huddle re-imagines the way we communities. You have a voice, but so
@@ -38,6 +39,7 @@
           Register
         </button>
       </div>
+
       <div name="socials" class="flex flex-row gap-4">
         <img src="images/fb.svg" alt="" class="w-5" />
         <img src="images/x.svg" alt="" class="w-5" />
